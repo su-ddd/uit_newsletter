@@ -12,6 +12,7 @@ dependencies[] = link
 dependencies[] = list
 dependencies[] = number
 dependencies[] = options
+dependencies[] = service_catalog
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text

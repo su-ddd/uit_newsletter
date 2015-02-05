@@ -26,9 +26,9 @@ function uit_newsletter_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '21600';
+  $handler->display->display_options['cache']['results_lifespan'] = '-1';
   $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '21600';
+  $handler->display->display_options['cache']['output_lifespan'] = '-1';
   $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -107,13 +107,6 @@ function uit_newsletter_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Header: Global: Text area */
-  $handler->display->display_options['header']['area']['id'] = 'area';
-  $handler->display->display_options['header']['area']['table'] = 'views';
-  $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h1 class="title" id="page-title">[field_date_1] Newsletter</h1>';
-  $handler->display->display_options['header']['area']['format'] = 'full_html';
-  $handler->display->display_options['header']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
@@ -209,7 +202,6 @@ $vid = $vocabulary->vid;
 $tree = taxonomy_get_tree($vid, 0, NULL, TRUE);
 $released = array_filter($tree, "released");
 $last_issue = array_pop($released);
-$argument->options[\'title\'] = format_date( strtotime ($last_issue->field_date[\'und\'][0][\'value\'] ), \'newsletter_issue\') . " Newsletter";
 return $last_issue->name;';
   $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
