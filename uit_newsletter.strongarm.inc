@@ -76,7 +76,7 @@ function uit_newsletter_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '9',
+          'weight' => '10',
         ),
         'redirect' => array(
           'weight' => '9',

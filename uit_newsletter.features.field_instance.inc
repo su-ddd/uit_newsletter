@@ -10,7 +10,7 @@
 function uit_newsletter_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-newsletter_article-body'
+  // Exported field_instance: 'node-newsletter_article-body'.
   $field_instances['node-newsletter_article-body'] = array(
     'bundle' => 'newsletter_article',
     'default_value' => NULL,
@@ -22,7 +22,7 @@ function uit_newsletter_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -51,11 +51,11 @@ function uit_newsletter_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
-  // Exported field_instance: 'node-newsletter_article-field_blurb'
+  // Exported field_instance: 'node-newsletter_article-field_blurb'.
   $field_instances['node-newsletter_article-field_blurb'] = array(
     'bundle' => 'newsletter_article',
     'default_value' => NULL,
@@ -66,7 +66,7 @@ function uit_newsletter_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -116,11 +116,12 @@ function uit_newsletter_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
-  // Exported field_instance: 'node-newsletter_article-field_catalog_service_provider'
+  // Exported field_instance:
+  // 'node-newsletter_article-field_catalog_service_provider'.
   $field_instances['node-newsletter_article-field_catalog_service_provider'] = array(
     'bundle' => 'newsletter_article',
     'default_value' => NULL,
@@ -131,7 +132,7 @@ function uit_newsletter_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -152,11 +153,11 @@ function uit_newsletter_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-newsletter_article-field_date'
+  // Exported field_instance: 'node-newsletter_article-field_date'.
   $field_instances['node-newsletter_article-field_date'] = array(
     'bundle' => 'newsletter_article',
     'default_value' => NULL,
@@ -172,9 +173,10 @@ function uit_newsletter_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -207,11 +209,11 @@ function uit_newsletter_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-newsletter_article-field_featured_image'
+  // Exported field_instance: 'node-newsletter_article-field_featured_image'.
   $field_instances['node-newsletter_article-field_featured_image'] = array(
     'bundle' => 'newsletter_article',
     'deleted' => 0,
@@ -225,7 +227,7 @@ function uit_newsletter_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -271,11 +273,11 @@ function uit_newsletter_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
-  // Exported field_instance: 'node-newsletter_article-field_images'
+  // Exported field_instance: 'node-newsletter_article-field_images'.
   $field_instances['node-newsletter_article-field_images'] = array(
     'bundle' => 'newsletter_article',
     'deleted' => 0,
@@ -285,7 +287,7 @@ function uit_newsletter_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -331,11 +333,11 @@ function uit_newsletter_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
-  // Exported field_instance: 'node-newsletter_article-field_issue'
+  // Exported field_instance: 'node-newsletter_article-field_issue'.
   $field_instances['node-newsletter_article-field_issue'] = array(
     'bundle' => 'newsletter_article',
     'default_value' => NULL,
@@ -346,7 +348,7 @@ function uit_newsletter_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -367,11 +369,52 @@ function uit_newsletter_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
-  // Exported field_instance: 'node-newsletter_article-field_weight'
+  // Exported field_instance:
+  // 'node-newsletter_article-field_newsletter_subtitle'.
+  $field_instances['node-newsletter_article-field_newsletter_subtitle'] = array(
+    'bundle' => 'newsletter_article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_newsletter_subtitle',
+    'label' => 'Subtitle',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-newsletter_article-field_weight'.
   $field_instances['node-newsletter_article-field_weight'] = array(
     'bundle' => 'newsletter_article',
     'default_value' => array(
@@ -386,7 +429,7 @@ function uit_newsletter_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -411,11 +454,11 @@ function uit_newsletter_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-newsletter_issue-field_date'
+  // Exported field_instance: 'taxonomy_term-newsletter_issue-field_date'.
   $field_instances['taxonomy_term-newsletter_issue-field_date'] = array(
     'bundle' => 'newsletter_issue',
     'default_value' => NULL,
@@ -431,6 +474,7 @@ function uit_newsletter_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -464,7 +508,7 @@ function uit_newsletter_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'taxonomy_term-newsletter_issue-field_released'
+  // Exported field_instance: 'taxonomy_term-newsletter_issue-field_released'.
   $field_instances['taxonomy_term-newsletter_issue-field_released'] = array(
     'bundle' => 'newsletter_issue',
     'default_value' => array(
@@ -512,6 +556,7 @@ function uit_newsletter_field_default_field_instances() {
   t('Other Images');
   t('Provider');
   t('Released');
+  t('Subtitle');
   t('Use 0 for the top item, 1 for the next, etc.');
   t('Weight');
 
